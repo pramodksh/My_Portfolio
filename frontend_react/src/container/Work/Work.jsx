@@ -23,18 +23,34 @@ const Work = () => {
 	}, []) 
 
          useEffect(() => {
-    const query = '*[_type == "works"]';
+        const query = '*[_type == "works"]';
 
-    client.fetch(query).then((data) => {
-      setWorks(data);
-      setFilterWork(data);
-    });
-  }, []);
-		const handleWorkFilter = (item) =>{
+        client.fetch(query).then((data) => {
+                setWorks(data);
+                setFilterWork(data);
+         });
+}, []);
+const handleWorkFilter = (item) =>{
+        setActiveFilter(item);
+        setAnimateCard([{y:100, opacity:0}]);
 
-		}
 
-	return (
+        setTimeout(() =>{
+                setAnimateCard([{y : 0, opacity : 1 }]);
+
+                if(item === 'All'){
+                        setFilterWork(works);
+                }else{
+                        setFilterWork(works.filter((work) => work.tags.includes(item)))
+                }
+        }, 500);
+}
+
+
+
+// TODO : All the tag names should be same as list of Tags present on page 
+	
+return (
 	<>
 		<h2 className='head-text'>
 			My Creative <span>Portfolio </span> section</h2>
