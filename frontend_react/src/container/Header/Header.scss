@@ -52,6 +52,7 @@
                 }
 }
 .app__header-badge{
+                margin-top: 2rem;
                 width: 100%;
                 display: flex;
                 justify-content: flex-end;
@@ -64,7 +65,7 @@
                                 border-radius: 15px;
                                 flex-direction: row;
                                 width: auto;
-
+                                background-color: rgba(0, 0, 0, 0.085);
                                 box-shadow : 0 0 20px rgba(0,0,0,0.1);
                 }
 
@@ -184,5 +185,16 @@
 
                 @media screen and (max-width:1200px) {
                                 margin: 2rem 0;
+                }
+}
+
+.plusTen{
+                font-size: 1.2rem;
+                text-align: left;
+                color: var(--gray-color);
+                line-height: 1.5;
+
+                @media screen and (min-width: 2000px) {
+                                font-size: 1.75rem;
                 }
 }
