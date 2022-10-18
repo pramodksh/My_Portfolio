@@ -94,69 +94,138 @@
 
 .app__header-circles {
 
-                flex: 0.75;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: flex-start;
-                height: 100%;
-                margin-left: 1rem;
+        flex: 0.75;
+        display:-webkit-box;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        height: 100%;
+        margin-left: 1rem;
 
-                div{
-                                width: 100px;
-                                height: 100px;
-                                border-radius: 50%;
+        div{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
 
-                                background : var(--white-color);
-                                box-shadow : 0 0 20px rgba(0,0,0,0.1);
-                                img{
-                                                width: 60%;
-                                                height: 60%;
-                
-                                }
+                background : var(--white-color);
+                box-shadow : 0 0 20px rgba(0,0,0,0.1);
+                img{
+                        width: 60%;
+                        height: 60%;
+
                 }
+        }
+        div:nth-child(1){
+                // github
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                left: 925px;
+                top: 150px;
+                
+        }
+
+        div:nth-child(2){
+                // flutter
+                position: absolute;
+                margin: 1.75rem;
+                width: 150px;
+                height: 150px;
+                left: 975px;
+                top: 250px;
+        }
+
+        div:nth-child(3){
+                // figma
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                left: 1067px;
+                top: 180px;
+        }
+        div:nth-child(4){
+                // html
+                width: 90px;
+                height: 90px;
+                position: absolute;
+                left: 1000px;
+                top: 473px;
+        }
+        div:nth-child(5){
+                // css
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                left: 1085px;
+                top: 565px;
+        }
+        div:nth-child(6){
+                // js
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                left: 1116px;
+                top: 435px;
+        }
+        div:nth-child(7){
+                // blender
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 1235px;
+                top: 484px;
+        }
+        div:nth-child(8){
+                // adobeIllustrator
+                width: 90px;
+                height: 90px;
+                position: absolute;
+                left: 1174px;
+                top: 235px;
+        }
+        div:nth-child(9){
+                // afterEffects
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                left: 1290px;
+                top: 275px;
+        }
+        div:nth-child(10){
+                // premierPro
+                width: 75px;
+                height: 75px;
+                position: absolute;
+                left: 1238px;
+                top: 340px;
+        }
+        @media screen and (min-width: 2000px) {
                 div:nth-child(1){
-                                width: 100px;
-                                height: 100px;
+                                width: 400px;
+                                height: 400px;
                 }
 
                 div:nth-child(2){
                                 margin: 1.75rem;
-                                width: 150px;
-                                height: 150px;
+                                width: 170px;
+                                height: 170px;
                 }
 
                 div:nth-child(3){
-                                width: 70px;
-                                height: 70px;
+                                width: 200px;
+                                height: 200px;
                 }
-                @media screen and (min-width: 2000px) {
-                                div:nth-child(1){
-                                                width: 400px;
-                                                height: 400px;
-                                }
-                
-                                div:nth-child(2){
-                                                margin: 1.75rem;
-                                                width: 170px;
-                                                height: 170px;
-                                }
-                
-                                div:nth-child(3){
-                                                width: 200px;
-                                                height: 200px;
-                                }
+        }
+        @media screen and (max-width:1200px) {
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-left: 0;
+                // background-color: Red;
+                div{
+                                margin: 1rem;               
                 }
-                @media screen and (max-width:1200px) {
-                                width: 100%;
-                                flex-direction: row;
-                                flex-wrap: wrap;
-                                margin-left: 0;
-
-                                div{
-                                                margin: 1rem;               
-                                }
-                }
+        }
                 
 }
 

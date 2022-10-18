@@ -34,6 +34,11 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import blender from '../assets/blender.png';
+import premierepro from '../assets/premierepro.png';
+import illustrator from '../assets/illustrator.png';
+import aftereffect from '../assets/aftereffect.png';
+
 
 export default {
   email,
@@ -69,4 +74,8 @@ export default {
   nb,
   skype,
   spotify,
+  blender,
+  illustrator,
+  premierepro,
+  aftereffect,
 };
