@@ -1,14 +1,22 @@
+
+import figma from '../assets/logos/figma.png';
+import flutter from '../assets/logos/flutter.png';
+import git from '../assets/logos/git.png';
+import html from '../assets/logos/html.png';
+import javascript from '../assets/logos/javascript.png';
+import blender from '../assets/logos/blender.png';
+import premierepro from '../assets/logos/premierepro.png';
+import illustrator from '../assets/logos/illustrator.png';
+import aftereffect from '../assets/logos/aftereffect.png';
+
+
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
 import api from '../assets/api.png';
 import cpp from '../assets/cpp.png';
-import css from '../assets/css.png';
-import figma from '../assets/figma.png';
-import flutter from '../assets/flutter.png';
-import git from '../assets/git.png';
+import css from '../assets/logos/css.png';
+
 import graphql from '../assets/graphql.png';
-import html from '../assets/html.png';
-import javascript from '../assets/javascript.png';
 import mu5 from '../assets/mu5.png';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
@@ -34,10 +42,7 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
-import blender from '../assets/blender.png';
-import premierepro from '../assets/premierepro.png';
-import illustrator from '../assets/illustrator.png';
-import aftereffect from '../assets/aftereffect.png';
+
 
 
 export default {
