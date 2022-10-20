@@ -17,10 +17,15 @@ const scaleVarients = {
         }
 }
 
-const listOfIcons = [images.git, images.flutter,
-images.figma, images.html, images.css,
-images.javascript, images.blender, images.illustrator,
-images.aftereffect, images.premierepro,];
+// const listOfIcons = [images.git, images.flutter,
+// images.figma, images.html, images.css,
+// images.javascript, images.blender, images.illustrator,
+// images.aftereffect, images.premierepro,];
+
+const listOfIcons = [images.git, images.flutter,]
+// images.figma, images.html, images.css,
+// images.javascript, images.blender, images.illustrator,
+// images.aftereffect, images.premierepro,];
 
 const Header = () => {
         return (
