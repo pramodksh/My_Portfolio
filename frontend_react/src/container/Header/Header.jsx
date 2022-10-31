@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-
+import Typewriter from "typewriter-effect";
 import { AppWrap } from '../../wrapper';
 
 import { images } from '../../constants'
@@ -37,11 +37,26 @@ const Header = () => {
                         >
                                 <div className="app__header-badge">
                                         <div className="badge-cmp app__flex">
-                                                <span>👋</span>
+                                                {/* <span>👋</span> */}
                                                 <div style={{ marginLeft: 20 }}>
                                                         {/* <h6 className="p-text">Hello, I am</h6> */}
-                                                        <h6 className=" plusTen">Hello, I am</h6>
-                                                        <h1 className="head-text">Pramod Kumar</h1>
+                                                        {/* <h6 className=" plusTen">Hello, I am</h6> */}
+                                                        {/* <h1 className="head-text name-font">Pramod Kumar</h1> */}
+                                                        <div className="App">
+                                                                <Typewriter
+
+                                                                        onInit={(typewriter) => {
+                                                                                typewriter
+                                                                                        .typeString("Hello, I am ")
+                                                                                        .typeString("<h4>Pramod Kumar</h4>")
+                                                                                        .pauseFor(1000)
+                                                                                        // .deleteAll()
+                                                                                        // .deleteChars(12)
+                                                                                        // .typeString("Welcomes You")
+                                                                                        .start();
+                                                                        }}
+                                                                />
+                                                        </div>
                                                 </div>
                                         </div>
                                         <div className="tag-cmp app__flex">
@@ -86,3 +101,12 @@ const Header = () => {
 }
 
 export default AppWrap(Header, 'home');
+
+// https://www.behance.net/gallery/155901101/Hot-Beans-Cafeteria
+// https://www.behance.net/gallery/155901777/Poster-Design?
+// https://www.behance.net/gallery/155930363/Dream
+// https://www.behance.net/gallery/155930923/Paper-for-Peers
+
+
+
+// TODO : Add current working project section
